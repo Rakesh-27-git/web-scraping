@@ -1,0 +1,28 @@
+[
+  {
+    "name": "ctl00$ContentPlaceHolder1$txtadharno",
+    "type": "input",
+    "inputType": "text",
+    "placeholder": "Your Aadhaar No",
+    "label": "1. Aadhaar Number/ आधार संख्या",
+    "required": true,
+    "maxlength": 12,
+    "validation": {
+      "regex": "^[0-9]{12}$",
+      "errorMessage": "Aadhaar number must be exactly 12 digits."
+    }
+  },
+  {
+    "name": "ctl00$ContentPlaceHolder1$txtownername",
+    "type": "input",
+    "inputType": "text",
+    "placeholder": "Name as per Aadhaar",
+    "label": "2. Name of Entrepreneur / उद्यमी का नाम",
+    "required": true,
+    "maxlength": 100,
+    "validation": {
+      "regex": "^[A-Za-z ]+$",
+      "errorMessage": "Name must contain only letters and spaces."
+    }
+  }
+]
