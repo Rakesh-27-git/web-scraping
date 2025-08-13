@@ -16,7 +16,7 @@ datasource db {
 
 model Step1Submission {
   id            String   @id @default(cuid())
-  aadhaarNumber String   @db.VarChar(12)
+  aadhaarNumber String   @unique @db.VarChar(12)
   aadhaarName   String
   createdAt     DateTime @default(now())
 }
